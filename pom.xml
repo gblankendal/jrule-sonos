@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <ohc.version>4.0.0-SNAPSHOT</ohc.version>
+        <ohc.version>4.2.3</ohc.version>
     </properties>
 
     <dependencies>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>org.openhab.automation.jrule</groupId>
             <artifactId>jrule</artifactId>
-            <version>4.0.0-SNAPSHOT</version>
+            <version>jrule-4.0.0-BETA21</version>
             <scope>system</scope>
             <systemPath>${basedir}/jar/jrule.jar</systemPath>
         </dependency>
@@ -32,7 +32,6 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.9.1</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <version>1.2.9</version>
@@ -164,6 +163,10 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+            <repository>
+        <id>openhab-libs</id>
+        <url>https://openhab.jfrog.io/openhab/libs-release/</url>
+    </repository>
     </repositories>
 
 </project>
